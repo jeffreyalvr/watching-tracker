@@ -8,9 +8,11 @@ nav {
 }
 
 nav .wrapper {
-  width: 800px;
+  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  padding: 0 50px;
 }
 
 nav .wrapper .left,
@@ -56,4 +58,33 @@ nav .link-item:hover {
 
 nav .active {
   background-color: #1a1a1a41;
+}
+
+nav .hamb {
+  height: 48px;
+  width: 48px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 940px) {
+  nav .wrapper .right .hamb {
+    display: none;
+  }
+  nav .link-item {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  nav .wrapper {
+    width: 100%;
+  }
+  nav .wrapper .right .hamb {
+    display: block;
+  }
+  nav .link-item {
+    display: none;
+  }
 }

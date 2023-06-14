@@ -3,9 +3,9 @@ import React from "react";
 import Header from "../../components/Header";
 
 const Home = () => (
-  <wrapper>
+  <div className="wrapper">
     <Header />
-  </wrapper>
+  </div>
 );
 
 export default Home;

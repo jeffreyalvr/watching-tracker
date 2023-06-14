@@ -3,6 +3,7 @@ import React from "react";
 import "./styles.css";
 
 import icon from "../../assets/icons/icon.png";
+import menuIcon from "../../assets/icons/menu.png";
 
 const Nav = () => (
   <nav>
@@ -14,6 +15,9 @@ const Nav = () => (
         </div>
       </div>
       <div className="right">
+        <div className="hamb">
+          <img src={menuIcon} />
+        </div>
         <div className="link-item active">Início</div>
         <div className="link-item">Filmes</div>
         <div className="link-item">Séries</div>
